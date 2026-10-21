@@ -20,9 +20,9 @@
 | seertr | [Research/seertr](Research/seertr/README.md) | Research/seertr：研究主仓 |
 | QuasiNewton | [Experimental/quasi_newton](Experimental/quasi_newton/README.md) | Experimental/quasi_newton：实验项目导航 |
 | SelfCorrecting | [Experimental/self_correcting](Experimental/self_correcting/README.md) | Experimental/self_correcting：实验研究 |
-| MetricizedMuonP0 | [Experimental/metricized_muon_p0](Experimental/metricized_muon_p0/README.md) | Experimental/metricized_muon_p0：本地实验原型 |
-| jev_feasibility | [Experimental/jev_feasibility](Experimental/jev_feasibility/README.md) | Experimental/jev_feasibility：本地实验原型 |
-| RailwayMaintenance | [Experimental/railway_maintenance](Experimental/railway_maintenance/README.md) | Experimental/railway_maintenance：本地实验与交付 |
+| MetricizedMuonP0 | [Experimental/metricized_muon_p0](Experimental/metricized_muon_p0/README.md) | Experimental/metricized_muon_p0：实验原型；规则与源码私有同步 |
+| jev_feasibility | [Experimental/jev_feasibility](Experimental/jev_feasibility/README.md) | Experimental/jev_feasibility：实验原型；规则与源码私有同步 |
+| RailwayMaintenance | [Experimental/railway_maintenance](Experimental/railway_maintenance/README.md) | Experimental/railway_maintenance：实验原型；规则与源码私有同步 |
 | DisGRem | [Publish/disgrem_paper](Publish/disgrem_paper/README.md) | Publish/disgrem_paper：论文生产；Public/disgrem：软件发布 |
 | ArXiv | [Publish/arxiv](Publish/arxiv/README.md) | Publish/arxiv：共享论文包装 |
 | MathResearchHarness | [Public/math_research_harness](Public/math_research_harness/README.md) | Public/math_research_harness：独立软件产品 |

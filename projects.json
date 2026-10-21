@@ -189,7 +189,7 @@
       "repo_refs": [
         {
           "path": "Experimental/metricized_muon_p0",
-          "role": "本地实验原型"
+          "role": "实验原型；规则与源码私有同步"
         }
       ]
     },
@@ -200,7 +200,7 @@
       "repo_refs": [
         {
           "path": "Experimental/jev_feasibility",
-          "role": "本地实验原型"
+          "role": "实验原型；规则与源码私有同步"
         }
       ]
     },
@@ -211,7 +211,7 @@
       "repo_refs": [
         {
           "path": "Experimental/railway_maintenance",
-          "role": "本地实验与交付"
+          "role": "实验原型；规则与源码私有同步"
         }
       ]
     },

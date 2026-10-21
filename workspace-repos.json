@@ -299,6 +299,42 @@
       "visibility": "private",
       "syncEnabled": true,
       "note": "Private rule and tool source; synchronization authorized on 2026-10-21."
+    },
+    {
+      "category": "Experimental",
+      "path": "Experimental/metricized_muon_p0",
+      "owner": "huwei-research",
+      "repo": "metricized_muon_p0",
+      "remote": "https://github.com/huwei-research/metricized_muon_p0.git",
+      "localBranch": "codex/project_naming",
+      "remoteBranch": "codex/project_naming",
+      "visibility": "private",
+      "syncEnabled": true,
+      "note": "Private rules and reviewed source whitelist authorized on 2026-10-21; data, weights, results and private deliverables stay local."
+    },
+    {
+      "category": "Experimental",
+      "path": "Experimental/jev_feasibility",
+      "owner": "huwei-research",
+      "repo": "jev_feasibility",
+      "remote": "https://github.com/huwei-research/jev_feasibility.git",
+      "localBranch": "codex/project_naming",
+      "remoteBranch": "codex/project_naming",
+      "visibility": "private",
+      "syncEnabled": true,
+      "note": "Private rules and reviewed source whitelist authorized on 2026-10-21; data, weights, results and private deliverables stay local."
+    },
+    {
+      "category": "Experimental",
+      "path": "Experimental/railway_maintenance",
+      "owner": "huwei-research",
+      "repo": "railway_maintenance",
+      "remote": "https://github.com/huwei-research/railway_maintenance.git",
+      "localBranch": "codex/project_naming",
+      "remoteBranch": "codex/project_naming",
+      "visibility": "private",
+      "syncEnabled": true,
+      "note": "Private rules and reviewed source whitelist authorized on 2026-10-21; data, weights, results and private deliverables stay local."
     }
   ],
   "excludedLocalDependencies": [
@@ -321,10 +357,6 @@
     {
       "path": "Personal/SkillBackups",
       "reason": "Dated local backups of user-installed Codex skills; transfer manually and keep private."
-    },
-    {
-      "path": "Experimental/metricized_muon_p0",
-      "reason": "Local P0 experiment package without an authorized remote; retain through manual transfer."
     },
     {
       "path": "Archive",
