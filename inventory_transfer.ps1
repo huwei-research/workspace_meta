@@ -130,6 +130,8 @@ $manualRoots = @(
     [pscustomobject]@{ path="Personal/SkillBackups"; policy="required-codex-profile"; reason="Dated backup of user-installed Codex skills." },
     [pscustomobject]@{ path="Archive"; policy="optional-archive"; reason="Historical snapshots and generated artifacts." },
     [pscustomobject]@{ path="Experimental/metricized_muon_p0"; policy="required-local-data"; reason="Private source is in Git; excluded research data and results require local transfer." },
+    [pscustomobject]@{ path="Experimental/jev_feasibility"; policy="required-local-data"; reason="Source is private Git; weights, input data, results and notes stay local." },
+    [pscustomobject]@{ path="Experimental/railway_maintenance"; policy="required-private-data"; reason="Source is private Git; workbooks, archives, results and private deliverables need trusted transfer." },
     [pscustomobject]@{ path="Experimental/lean-libraries"; policy="optional-offline-dependencies"; reason="External Lean checkouts, toolchains, and caches." }
 )
 $manualRoots | Export-Csv -LiteralPath (Join-Path $output "manual-copy-roots.csv") -NoTypeInformation -Encoding UTF8

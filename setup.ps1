@@ -3,7 +3,7 @@
 .SYNOPSIS
     Recreate the complete managed workspace from workspace-repos.json.
 .DESCRIPTION
-    Clone workspace-meta first, then run this script from the workspace root.
+    Clone workspace_meta first, then run this script from the workspace root.
     Repositories that share a GitHub remote can still use distinct local and
     remote branches. Entries with syncEnabled=false are reported and skipped
     unless -IncludePending is supplied.

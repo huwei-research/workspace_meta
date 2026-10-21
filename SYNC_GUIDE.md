@@ -96,6 +96,12 @@ to audit one category at a time.
 
 ## Current synchronization status
 
+As of 2026-10-21, all 29 project repositories and the workspace repository have registered remote branches. Every registered remote branch was checked against the corresponding local commit. The three prototype repositories are private and contain only reviewed rules and source files; ignored evidence, model weights and private deliverables still require local transfer. See `workspace-repos.json` for current addresses and branches.
+
+For the current project naming check, run `python -B research_harness/tools/check_project_names.py --workspace .`.
+
+### Historical registration (2026-07-13)
+
 As of 2026-07-13, all 23 managed Git worktrees have an enabled remote mapping.
 The repositories created during the full-workspace synchronization pass are:
 
@@ -115,7 +121,7 @@ release-facing history used by `Public/matro`.
   packages; restore them from the owning Lean project's manifest.
 - `Personal/AIContext/`: local-only personal context.
 - workspace-root `.tmp*`, `tmp/`, review renders, application-form exports, and
-  transfer packages: local artifacts, never `workspace-meta` content.
+  transfer packages: local artifacts, never `workspace_meta` content.
 - `.agents/skills/weihu-resume-writer/` at the workspace root: ignored installed
   copy; its synchronized source belongs to the private resume repository.
 - bulk raw experiment outputs that a project marks as scratch or generated:

@@ -17,4 +17,4 @@ setup.ps1用于明确的新机器恢复；sync_all.ps1默认Status，Fetch/Pull/
 audit_workspace.ps1是可选管理检查；其DeepNaming不是所有项目的日常前置要求。inventory_transfer/export_workspace/verify_transfer用于明确的可信介质转移任务，不等于云备份。
 旧restore_codex_skills.ps1仅保留显式Legacy恢复；新科研能力从research_harness维护源部署，不整库恢复旧技能。
 
-子项目各有独立Git根，不从workspace-meta递归暂存项目内容。详细同步/转移历史说明仍在SYNC_GUIDE.md和TRANSFER_GUIDE.md；其中旧科研入口不覆盖现行AGENTS和SKILLS_SYNC。
+子项目各有独立Git根，不从workspace_meta递归暂存项目内容。详细同步/转移历史说明仍在SYNC_GUIDE.md和TRANSFER_GUIDE.md；其中旧科研入口不覆盖现行AGENTS和SKILLS_SYNC。

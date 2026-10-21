@@ -6,12 +6,9 @@ skills that are intentionally outside normal repository cloning.
 
 ## What is synchronized by Git
 
-`workspace-repos.json` defines 23 managed worktrees. These repositories can be
-recreated with `setup.ps1` and checked with `sync_all.ps1`.
+`workspace-repos.json` is the current repository and branch registry. It now includes the workspace and all 29 project repositories. Clone only the registered branches; a clean Git checkout does not include ignored local evidence or private delivery assets.
 
-The workspace-local skills `math-paper-writer` and `research-orchestrator` are
-tracked by `workspace-meta`. The private `weihu-resume-writer` source is tracked
-in `Personal/weihu_resume` and installed into the workspace by `setup.ps1`.
+Current research rules and eight skills are maintained in the private `research_harness` repository; use its deployment guide. The old `math-paper-writer` and `research-orchestrator` entries remain retired. The private `weihu-resume-writer` source belongs to `Personal/weihu_resume`.
 
 ## What requires a trusted drive
 
@@ -19,7 +16,9 @@ in `Personal/weihu_resume` and installed into the workspace by `setup.ps1`.
 - `Personal/AIContext/`
 - `Personal/SkillBackups/`
 - `Archive/`
-- `Experimental/metricized_muon_p0/`
+- ignored data and results in `Experimental/metricized_muon_p0/`
+- ignored data, weights, results, and notes in `Experimental/jev_feasibility/`
+- ignored workbooks, archives, results, and private deliverables in `Experimental/railway_maintenance/`
 - ignored raw or expensive-to-regenerate outputs inside managed repositories
 - optional external Lean toolchains and checkouts under
   `Experimental/lean-libraries/`
