@@ -1,61 +1,20 @@
-# 2026Projects workspace
+# 2026Projects 科研工作区
 
-This repository is the synchronization and convention layer for the independent
-projects stored below `Research/`, `Publish/`, `Public/`, `Experimental/`,
-`Personal/`, and `LiteratureLibrary/`.
+从[项目导航](PROJECTS.md)进入研究、论文或代码项目；每个项目的AGENTS说明实际入口，当前状态说明已经得到什么和下一项工作。
+科研先充分探索，管理结构负责让资料容易找到、方法按需使用、结果可以追溯。普通任务无需先运行整套审计。
 
-The child projects are separate Git repositories. Do not run a workspace-root
-`git add -A` expecting it to commit project work.
+- [科研与管理使用指南](research_harness/README.md)
+- [工作区职责](AGENTS.md)与[规范入口](CONVENTIONS.md)
+- [逻辑项目清单](projects.json)：项目及仓库角色；PROJECTS.md由它生成。
+- [仓库登记](workspace-repos.json)：已有仓库、远端、分支；不记录科研结论。
+- [技能部署说明](SKILLS_SYNC.md)：新规则和专业方法的维护、部署与旧入口停用。
 
-## Instruction and structure guide
+Research、Publish、Public、Experimental、LiteratureLibrary分别保存研究、论文生产、发布代码、原型和文献服务。Personal与Archive保留独立隐私和历史边界。
 
-- [AGENTS.md](AGENTS.md) defines shared boundaries and how to read each instruction layer.
-- [CONVENTIONS.md](CONVENTIONS.md) owns directory, naming, version, evidence, and Git defaults.
-- Category instructions define the role of [Research](Research/AGENTS.md),
-  [Publish](Publish/AGENTS.md), [Public](Public/AGENTS.md),
-  [Experimental](Experimental/AGENTS.md), [Personal](Personal/AGENTS.md),
-  [LiteratureLibrary](LiteratureLibrary/AGENTS.md), and [Archive](Archive/AGENTS.md).
-- Each project's `AGENTS.md` records actual entry points, local exceptions, and checks.
-  More local instruction files add only the rules needed for their subtree.
-- New projects use the [project template](.agents/templates/project_agents_template.md);
-  specialized subtrees use the [subdirectory template](.agents/templates/subdirectory_agents_template.md).
+## 已有同步与迁移工具
 
-The root repository tracks category instruction files; it continues to exclude
-the projects and private local contents beneath those categories. A standalone
-project clone has its own instructions and must not depend on private sibling
-repositories for ordinary setup or tests.
+setup.ps1用于明确的新机器恢复；sync_all.ps1默认Status，Fetch/Pull/Push是不同操作。先阅读实际参数和目标，日常研究不自动调用同步。
+audit_workspace.ps1是可选管理检查；其DeepNaming不是所有项目的日常前置要求。inventory_transfer/export_workspace/verify_transfer用于明确的可信介质转移任务，不等于云备份。
+旧restore_codex_skills.ps1仅保留显式Legacy恢复；新科研能力从research_harness维护源部署，不整库恢复旧技能。
 
-## Local workspace overview
-
-The local [workspace overview](Personal/WorkspaceManagement/2026-09-05/INDEX.md)
-links the research-status snapshot, the current minimal skills profile, and reversible
-desktop organization records. This directory is private and intentionally
-excluded from Git; the link is available only on this computer or a trusted copy.
-
-## New machine
-
-```powershell
-git clone https://github.com/huwei-research/workspace-meta.git 2026Projects
-Set-Location 2026Projects
-powershell -NoProfile -ExecutionPolicy Bypass -File ./setup.ps1 -SkipVenv
-powershell -NoProfile -ExecutionPolicy Bypass -File ./sync_all.ps1 -Action Status
-```
-
-`workspace-repos.json` is the canonical repository and branch inventory.
-`setup.ps1` clones from that manifest, including repositories that share a
-remote but use separate research and release branches. `sync_all.ps1` reports
-dirty, ahead, behind, branch, and remote mismatches before any pull or push.
-`audit_workspace.ps1` checks required metadata and GitHub's large-blob limit;
-its `-DeepNaming` mode also checks case collisions and paper-figure naming.
-
-Private documents, local archives, ignored experiment outputs, and global user
-skills require a trusted-drive transfer in addition to Git. Use
-`inventory_transfer.ps1` to generate path manifests, `export_workspace.ps1` to
-copy the workspace, `verify_transfer.ps1` to check the copy, and
-`restore_codex_skills.ps1` to restore user-installed skills on another
-computer.
-
-See `SYNC_GUIDE.md` for the full workflow and `CONVENTIONS.md` for project,
-file, experiment, and publication conventions. See `TRANSFER_GUIDE.md` for the
-manual-drive workflow and privacy boundaries. See `SKILLS_SYNC.md` for the
-workspace, global, and plugin skill restore model.
+子项目各有独立Git根，不从workspace-meta递归暂存项目内容。详细同步/转移历史说明仍在SYNC_GUIDE.md和TRANSFER_GUIDE.md；其中旧科研入口不覆盖现行AGENTS和SKILLS_SYNC。

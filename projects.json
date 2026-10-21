@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "projects": [
+    {
+      "project_id": "orbit",
+      "display_name": "QuantumORBIT_DFO",
+      "entry_root": "Research/quantum_orbit_dfo",
+      "repo_refs": [
+        {
+          "path": "Research/quantum_orbit_dfo",
+          "role": "研究主仓"
+        }
+      ]
+    },
+    {
+      "project_id": "pico",
+      "display_name": "QuantumPICO_BARN",
+      "entry_root": "Research/quantum_pico_barn",
+      "repo_refs": [
+        {
+          "path": "Research/quantum_pico_barn",
+          "role": "研究主仓"
+        }
+      ]
+    },
+    {
+      "project_id": "buptr",
+      "display_name": "BUPTR",
+      "entry_root": "Research/buptr",
+      "repo_refs": [
+        {
+          "path": "Research/buptr",
+          "role": "研究主仓"
+        },
+        {
+          "path": "Publish/buptr_paper",
+          "role": "论文生产"
+        },
+        {
+          "path": "Public/buptr",
+          "role": "软件发布候选"
+        }
+      ]
+    },
+    {
+      "project_id": "sqzo",
+      "display_name": "SQZO",
+      "entry_root": "Research/sqzo",
+      "repo_refs": [
+        {
+          "path": "Research/sqzo",
+          "role": "研究主仓"
+        }
+      ]
+    },
+    {
+      "project_id": "barn",
+      "display_name": "BARN",
+      "entry_root": "Research/barn",
+      "repo_refs": [
+        {
+          "path": "Research/barn",
+          "role": "研究主仓"
+        }
+      ]
+    },
+    {
+      "project_id": "forn",
+      "display_name": "FoRN",
+      "entry_root": "Research/forn",
+      "repo_refs": [
+        {
+          "path": "Research/forn",
+          "role": "研究主仓"
+        }
+      ]
+    },
+    {
+      "project_id": "frost",
+      "display_name": "FROST",
+      "entry_root": "Research/frost",
+      "repo_refs": [
+        {
+          "path": "Research/frost",
+          "role": "研究主仓"
+        }
+      ]
+    },
+    {
+      "project_id": "matro",
+      "display_name": "MATRO",
+      "entry_root": "Research/matro",
+      "repo_refs": [
+        {
+          "path": "Research/matro",
+          "role": "研究主仓"
+        },
+        {
+          "path": "Publish/matro_paper",
+          "role": "论文生产"
+        },
+        {
+          "path": "Public/matro",
+          "role": "软件发布候选"
+        }
+      ]
+    },
+    {
+      "project_id": "memotro",
+      "display_name": "MemOTRO",
+      "entry_root": "Research/memotro",
+      "repo_refs": [
+        {
+          "path": "Research/memotro",
+          "role": "研究主仓"
+        }
+      ]
+    },
+    {
+      "project_id": "nm_geometry",
+      "display_name": "NMGeometry",
+      "entry_root": "Research/nm_geometry",
+      "repo_refs": [
+        {
+          "path": "Research/nm_geometry",
+          "role": "研究主仓"
+        }
+      ]
+    },
+    {
+      "project_id": "ritro",
+      "display_name": "RITRO",
+      "entry_root": "Research/ritro",
+      "repo_refs": [
+        {
+          "path": "Research/ritro",
+          "role": "研究主仓"
+        }
+      ]
+    },
+    {
+      "project_id": "rssm",
+      "display_name": "RSSM",
+      "entry_root": "Research/rssm",
+      "repo_refs": [
+        {
+          "path": "Research/rssm",
+          "role": "研究主仓"
+        }
+      ]
+    },
+    {
+      "project_id": "seertr",
+      "display_name": "seertr",
+      "entry_root": "Research/seertr",
+      "repo_refs": [
+        {
+          "path": "Research/seertr",
+          "role": "研究主仓"
+        }
+      ]
+    },
+    {
+      "project_id": "quasi_newton",
+      "display_name": "QuasiNewton",
+      "entry_root": "Experimental/quasi_newton",
+      "repo_refs": [
+        {
+          "path": "Experimental/quasi_newton",
+          "role": "实验项目导航"
+        }
+      ]
+    },
+    {
+      "project_id": "self_correcting",
+      "display_name": "SelfCorrecting",
+      "entry_root": "Experimental/self_correcting",
+      "repo_refs": [
+        {
+          "path": "Experimental/self_correcting",
+          "role": "实验研究"
+        }
+      ]
+    },
+    {
+      "project_id": "metricized_muon_p0",
+      "display_name": "MetricizedMuonP0",
+      "entry_root": "Experimental/metricized_muon_p0",
+      "repo_refs": [
+        {
+          "path": "Experimental/metricized_muon_p0",
+          "role": "本地实验原型"
+        }
+      ]
+    },
+    {
+      "project_id": "jev_feasibility",
+      "display_name": "jev_feasibility",
+      "entry_root": "Experimental/jev_feasibility",
+      "repo_refs": [
+        {
+          "path": "Experimental/jev_feasibility",
+          "role": "本地实验原型"
+        }
+      ]
+    },
+    {
+      "project_id": "railway_maintenance",
+      "display_name": "RailwayMaintenance",
+      "entry_root": "Experimental/railway_maintenance",
+      "repo_refs": [
+        {
+          "path": "Experimental/railway_maintenance",
+          "role": "本地实验与交付"
+        }
+      ]
+    },
+    {
+      "project_id": "disgrem",
+      "display_name": "DisGRem",
+      "entry_root": "Publish/disgrem_paper",
+      "repo_refs": [
+        {
+          "path": "Publish/disgrem_paper",
+          "role": "论文生产"
+        },
+        {
+          "path": "Public/disgrem",
+          "role": "软件发布"
+        }
+      ]
+    },
+    {
+      "project_id": "arxiv",
+      "display_name": "ArXiv",
+      "entry_root": "Publish/arxiv",
+      "repo_refs": [
+        {
+          "path": "Publish/arxiv",
+          "role": "共享论文包装"
+        }
+      ]
+    },
+    {
+      "project_id": "math_research_harness",
+      "display_name": "MathResearchHarness",
+      "entry_root": "Public/math_research_harness",
+      "repo_refs": [
+        {
+          "path": "Public/math_research_harness",
+          "role": "独立软件产品"
+        }
+      ]
+    },
+    {
+      "project_id": "research_lit_harness",
+      "display_name": "research-lit-harness",
+      "entry_root": "LiteratureLibrary/research_lit_harness",
+      "repo_refs": [
+        {
+          "path": "LiteratureLibrary/research_lit_harness",
+          "role": "可选文献资料服务"
+        }
+      ]
+    },
+    {
+      "project_id": "research_harness",
+      "display_name": "科研规则与方法",
+      "entry_root": "research_harness",
+      "repo_refs": [
+        {
+          "path": "research_harness",
+          "role": "统一维护源"
+        }
+      ]
+    }
+  ],
+  "boundaries": [
+    {
+      "path": "Personal",
+      "role": "personal",
+      "handling": "navigation_only"
+    },
+    {
+      "path": "Archive",
+      "role": "frozen",
+      "handling": "preserve"
+    },
+    {
+      "path": "Experimental/lean-libraries",
+      "role": "third_party",
+      "handling": "exclude"
+    },
+    {
+      "path": "HelloAlgo",
+      "role": "external_learning",
+      "entry_root": null,
+      "handling": "exclude"
+    }
+  ]
+}

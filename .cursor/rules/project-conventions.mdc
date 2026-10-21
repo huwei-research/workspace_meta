@@ -1,12 +1,6 @@
 ---
-description: Follow workspace and project instructions for the current task.
+description: Follow current workspace and project instructions.
 alwaysApply: true
 ---
 
-Read the workspace `AGENTS.md`, category `AGENTS.md`, target project's `AGENTS.md`
-and README, and any applicable subdirectory `AGENTS.md` before editing.
-Use relevant sections of the workspace `CONVENTIONS.md` as defaults.
-Project instructions own actual paths and documented layout/version exceptions.
-This file is an instruction pointer; do not duplicate shared policy here.
-Respect the user's current skill enablement policy over obsolete mandatory skill routes.
-Keep research integrity, unrelated user work, privacy, and independent repository boundaries intact.
+Read workspace AGENTS.md and the target project's AGENTS.md. Follow task-relevant links for actual paths, naming and research methods. Research exploration comes first; historical stage limits and retired orchestration do not authorize or constrain the current task. Preserve independent Git roots and original evidence.

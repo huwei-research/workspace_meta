@@ -13,10 +13,10 @@ This matters because some paths intentionally share a remote:
 
 | Local path | Remote branch | Purpose |
 |---|---|---|
-| `Research/BUPTR` | `research/master` | private research and manuscript history |
-| `Public/BUPTR` | `master` | release-facing history |
-| `Research/MATRO` | `research/master` | private research history |
-| `Public/MATRO` | `master` | release-facing history |
+| `Research/buptr` | `research/master` | private research and manuscript history |
+| `Public/buptr` | `master` | release-facing history |
+| `Research/matro` | `research/master` | private research history |
+| `Public/matro` | `master` | release-facing history |
 
 Do not replace the manifest with category wildcards or a hand-written clone
 loop. Those approaches clone the wrong branch for split-history projects and
@@ -39,7 +39,7 @@ git lfs install
 ## New machine
 
 ```powershell
-git clone https://github.com/huwei-research/workspace-meta.git 2026Projects
+git clone https://github.com/huwei-research/workspace_meta.git 2026Projects
 Set-Location 2026Projects
 powershell -NoProfile -ExecutionPolicy Bypass -File ./setup.ps1 -SkipVenv
 powershell -NoProfile -ExecutionPolicy Bypass -File ./sync_all.ps1 -Action Status
@@ -47,7 +47,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File ./sync_all.ps1 -Action Statu
 
 Omit `-SkipVenv` to create environments for repositories that have
 `codes/requirements.txt`. `setup.ps1` also pulls declared Git LFS objects and
-installs the personalized resume skill from the private `Personal/Weihu-resume`
+installs the personalized resume skill from the private `Personal/weihu_resume`
 repository into the ignored workspace skill directory. Use `-SkipPrivateSkills`
 only when that private skill must not be installed on the target machine.
 
@@ -82,7 +82,7 @@ that are dirty, on the wrong branch, pointed at the wrong remote, missing their
 declared remote branch, or not fast-forwardable.
 
 Use `-RepoFilter 'Research/*'` or an exact path such as
-`-RepoFilter 'Research/MATRO'` for a targeted setup or synchronization pass.
+`-RepoFilter 'Research/matro'` for a targeted setup or synchronization pass.
 
 For a deeper read-only metadata and naming audit:
 
@@ -101,13 +101,13 @@ The repositories created during the full-workspace synchronization pass are:
 
 | Path | Default remote branch | Visibility |
 |---|---|---|
-| `Research/FoRN` | `master` | private |
-| `Research/FROST` | `codex/frost-scaffold` | private |
-| `Research/SQZO` | `codex/amortized-minimax-revision` | private |
-| `Public/MathResearchHarness` | `master` | public |
+| `Research/forn` | `master` | private |
+| `Research/frost` | `codex/frost-scaffold` | private |
+| `Research/sqzo` | `codex/amortized-minimax-revision` | private |
+| `Public/math_research_harness` | `master` | public |
 
-Do not point `Research/MATRO` at `origin/master`: that branch is the distinct
-release-facing history used by `Public/MATRO`.
+Do not point `Research/matro` at `origin/master`: that branch is the distinct
+release-facing history used by `Public/matro`.
 
 ## Intentionally excluded local material
 

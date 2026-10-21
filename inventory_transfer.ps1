@@ -33,7 +33,7 @@ try {
     if (-not $IncludeGitMetadata) {
         $rgArguments += @("-g", "!**/.git/**")
     }
-    $rgArguments += @("-g", "!Research/MemOTRO/codes/.pytest_cache/**")
+    $rgArguments += @("-g", "!Research/memotro/codes/.pytest_cache/**")
     $rgArguments += @("-g", "!Personal/TransferManifests/**")
     $savedErrorAction = $ErrorActionPreference
     $ErrorActionPreference = "SilentlyContinue"
@@ -129,7 +129,7 @@ $manualRoots = @(
     [pscustomobject]@{ path="Personal/AIContext"; policy="required-private"; reason="Local personal research context." },
     [pscustomobject]@{ path="Personal/SkillBackups"; policy="required-codex-profile"; reason="Dated backup of user-installed Codex skills." },
     [pscustomobject]@{ path="Archive"; policy="optional-archive"; reason="Historical snapshots and generated artifacts." },
-    [pscustomobject]@{ path="Experimental/MetricizedMuonP0"; policy="required-local-project"; reason="Local P0 project without an authorized remote." },
+    [pscustomobject]@{ path="Experimental/metricized_muon_p0"; policy="required-local-project"; reason="Local P0 project without an authorized remote." },
     [pscustomobject]@{ path="Experimental/lean-libraries"; policy="optional-offline-dependencies"; reason="External Lean checkouts, toolchains, and caches." }
 )
 $manualRoots | Export-Csv -LiteralPath (Join-Path $output "manual-copy-roots.csv") -NoTypeInformation -Encoding UTF8

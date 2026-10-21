@@ -1,129 +1,19 @@
-# Workspace Agent Instructions
+# 科研工作区说明
 
-## Scope and Priorities
+本工作区按研究问题组织项目。先通过[项目导航](PROJECTS.md)或实际目录定位目标，再读该项目AGENTS及当前任务需要的README/状态片段；子目录有真正局部契约时继续读取。
+用户当前任务优先。科研探索优先于提前设限：充分构造、推导、实现和检验，必要时才依据证据与资源调整范围。使用标准数学术语和清楚自然的语言，正式结论准确说明依据。
 
-- This workspace supports mathematical optimization research and reproducible software.
-- Follow the user's current task and preferences; scale the process to the actual work.
-- Use the exact filename `AGENTS.md` for maintained instructions.
-- Read this file, the target category's `AGENTS.md`, the project's `AGENTS.md` and README,
-  and any instructions between that project root and the files being changed.
-- Apply relevant sections of `CONVENTIONS.md` for directory, naming, version, and artifact
-  defaults. Read only the sections needed for the task.
-- Runtime instructions and the user's task take priority. Within workspace documents,
-  local rules specialize paths, notation, commands, and explicitly documented exceptions;
-  they must retain the research-integrity, privacy, and Git boundaries below.
-- If documents disagree, use verified project facts to correct stale guidance within scope.
-  Report unresolved material ambiguity; do not invent an authority or silently rename files.
+## 规则与事实各归其位
 
-## Instruction Responsibilities
+- 通用规则、命名和存储规范的维护源在research_harness/policies；专业方法在其skills。按需要查相关部分，不默认通读全部。
+- 项目AGENTS维护项目身份、真实入口、特殊数学条件与可用检查；唯一当前状态保存进展和下一步，历史文档保存当时事实。
+- projects.json关联逻辑项目和仓库角色，PROJECTS.md是生成导航；workspace-repos.json继续维护远端与分支登记，不重复维护研究结论。
+- 旧L0/L1、总路由、旧强制技能和旧一键科研流程全部退出现行默认使用；已有独立工具产品与历史资料保留，按明确任务选用。
 
-| Layer | Responsibility | Git owner |
-|---|---|---|
-| Workspace `AGENTS.md` | Shared boundaries and instruction-reading contract | `workspace-meta` |
-| Workspace `CONVENTIONS.md` | Detailed defaults, naming, versioning, and maintenance | `workspace-meta` |
-| Category `AGENTS.md` | Category purpose, allowed contents, and handoff rules | `workspace-meta` |
-| Project `AGENTS.md` | Actual paths, authority, exceptions, mathematics, and checks | That project's repository |
-| Subdirectory `AGENTS.md` | Additional rules for that subtree only | Its containing repository |
+## 仓库与类别
 
-- Category directories are organizational containers, not independent repositories.
-  Their instruction files are the only category contents tracked by `workspace-meta`.
-- Independent Git roots may prevent automatic loading of workspace/category instructions.
-  Project instructions must explicitly direct agents to read these files when available,
-  and retain enough guidance to work from a standalone clone.
-- Paths in a project instruction file are relative to that project root unless explicitly
-  marked otherwise; paths in a subdirectory file are relative to that directory.
-- Keep shared rules at their owning layer. README files explain use and index the same
-  entry points; Cursor rules and local convention stubs link to the owning instructions.
-- Add a subdirectory instruction file only for a real local contract. Do not duplicate
-  the complete parent file or add instructions to every ordinary folder.
-- Instructions in frozen snapshots, backups, vendored sources, and separate Git worktrees
-  are not guidance for the primary checkout. Preserve those versions during bulk maintenance;
-  update another active worktree only as a separate, coordinated change.
-- After changing an entry point or policy, update affected instructions, README links,
-  build/config references, and templates together. See `CONVENTIONS.md` section 1.
+workspace-meta与每个子仓库独立，.git文件也表示边界。按各仓库保存，不从父仓递归暂存子项目；新research_harness是独立本地仓库。
+Research拥有研究工作，Publish拥有论文生产与交付，Public拥有发布代码；Public名称不证明远端公开，也不授权公开私有内容。Experimental允许轻量非Git原型。LiteratureLibrary提供可选资料服务。Personal和Archive遵循各自保存边界。
+不默认提交、推送、发布或更改远端。保留用户未提交工作、原始结果和冻结资产。源码、目录或名称变更同步处理引用并验证受影响行为；既有数学符号、公开接口与历史来源不做机械统一。
 
-## Project Organization
-
-- Use the project-local path map before creating files. Preserve established layouts;
-  new code/paper/results directories are created only when needed.
-- Each artifact role has one declared editable authority. Mark mirrors, derived exports,
-  archived versions, and frozen releases explicitly; never edit a mirror as the source.
-- Keep reusable code, experiment drivers/configs, evidence, manuscript assets, notes,
-  and temporary build output in their documented locations.
-- Prefer stable descriptive filenames for new working sources and Git history for edits.
-  Retain documented versioned entry points and API names until a scoped migration.
-- Keep dated or versioned snapshots immutable, with a source revision and provenance.
-  Record code versions, manuscript revisions, experiment runs, and submissions separately.
-- Classify results by evidence status and release permission, not just extension or folder
-  name. `Public/` is a code-release category, not proof of remote visibility or publication.
-
-## Communication and Autonomy
-
-- Use Chinese for discussion unless the user requests another language.
-- Use English for code, comments, configuration, filenames, and TeX identifiers.
-- Lead reviews with concrete findings and file/line references.
-- State material assumptions, uncertainty, and verification gaps.
-- Complete authorized, reversible work without repeating permission requests.
-- Ask when missing information or authorization materially affects the next action.
-- Keep reports proportional to the task; avoid mandatory plans and fixed review rounds.
-
-## Skills
-
-- Respect the user's current enabled-skill policy.
-- That policy overrides older mandatory skill-routing clauses in project instructions.
-- Skip references to disabled skills while retaining project facts and integrity requirements.
-- Do not reactivate, reinstall, or substitute a disabled workflow without user authorization.
-- Use an enabled skill when explicitly requested or when its specific capability helps.
-- Keep skill use scoped to the task; no mandatory master router or fixed agent pipeline.
-- `grill-me` is for requested plan or design interrogation, not a gate for routine work.
-- Do not expand a local task into a full-corpus audit unless the task requires it.
-
-## Mathematical and Research Integrity
-
-- Mathematical correctness takes priority over style and narrative.
-- Never invent citations, assumptions, proof steps, data, numerical results, or publication status.
-- Mark unsupported factual claims with `[citation needed]` or `[verification needed]`.
-- Distinguish evidence, interpretation, and conjecture.
-- Before substantive proof changes, inspect relevant assumptions, domains, and dependencies.
-- Check the affected derivation and boundary cases to the depth warranted by the change.
-- Report mathematical defects before presenting polished text as correct.
-- Preserve notation, labels, references, constants, quantifiers, and inequality directions by default.
-- Make justified corrections within the authorized task and explain their mathematical impact.
-- Verify downstream uses when changing a result or assumption.
-- Support performance and complexity claims within the actual theorem or experimental scope.
-
-## Experiments and Artifacts
-
-- Preserve raw results; never alter them to support a preferred narrative.
-- Separate formal results, exploratory runs, and archived outputs.
-- For paper-grade runs, record code revision, environment, seeds, problems, solver versions,
-  budgets, stopping rules, commands, and runtime-relevant hardware.
-- Choose settings and metrics for the research question; document actual choices and fair comparisons.
-- Keep figures reproducible from recorded source data and plotting code.
-- Use the project's documented manuscript entry point and build directory.
-- Keep generated LaTeX artifacts untracked unless the project explicitly tracks them.
-- Verify submission bundles with a clean build from the packaged source.
-- Report what was verified and what remains unverified.
-
-## Code, Privacy, and Git
-
-- Prefer existing architecture and helper APIs; keep changes scoped and reviewable.
-- Use `pathlib.Path` for Python filesystem paths.
-- Run the narrowest meaningful checks; broaden when shared behavior or evidence requires it.
-- Keep private notes, unpublished manuscripts, local benchmark outputs, and confidential
-  reviewer material out of public repositories unless the user explicitly authorizes publication.
-- Never commit credentials or secrets.
-- The workspace root (`workspace-meta`) and each child repository are independent Git boundaries.
-- A `.git` file also marks a Git worktree boundary. Do not recursively stage its contents
-  from a parent checkout or infer its branch from the parent.
-- Inspect the target repository's status before staging or committing.
-- Preserve unrelated user changes; stage only changes belonging to the authorized task.
-- Commit separately in each repository; routine work does not authorize a push.
-- Before an authorized push, verify the actual remote, destination branch, visibility,
-  and outgoing commits against `workspace-repos.json` and the current task. Stop on a
-  mismatch rather than changing branches or remotes to make a bulk sync pass.
-- A private branch on a public remote does not protect unpublished material. Keep private
-  research on private remotes; repository category and branch name are not access controls.
-- Do not use destructive Git commands or delete user work without explicit authorization.
-- For new repositories, create README, `.gitignore`, `.gitattributes`, and project-local
-  `AGENTS.md` before substantive commits; tailor `.agents/templates/project_agents_template.md`.
+日常任务直接围绕科学问题执行，不先运行全库审计或Harness自检。需要详细规范时查看[项目管理说明](research_harness/policies/project_management.md)；维护工具用法见[使用指南](research_harness/README.md)。

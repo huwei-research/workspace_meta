@@ -11,7 +11,7 @@ recreated with `setup.ps1` and checked with `sync_all.ps1`.
 
 The workspace-local skills `math-paper-writer` and `research-orchestrator` are
 tracked by `workspace-meta`. The private `weihu-resume-writer` source is tracked
-in `Personal/Weihu-resume` and installed into the workspace by `setup.ps1`.
+in `Personal/weihu_resume` and installed into the workspace by `setup.ps1`.
 
 ## What requires a trusted drive
 
@@ -19,7 +19,7 @@ in `Personal/Weihu-resume` and installed into the workspace by `setup.ps1`.
 - `Personal/AIContext/`
 - `Personal/SkillBackups/`
 - `Archive/`
-- `Experimental/MetricizedMuonP0/`
+- `Experimental/metricized_muon_p0/`
 - ignored raw or expensive-to-regenerate outputs inside managed repositories
 - optional external Lean toolchains and checkouts under
   `Experimental/lean-libraries/`
@@ -44,7 +44,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File ./export_workspace.ps1 `
   -Destination 'E:\CodexTransfer' -Mode Exact
 ```
 
-One ignored pytest cache at `Research/MemOTRO/codes/.pytest_cache` has an
+One ignored pytest cache at `Research/memotro/codes/.pytest_cache` has an
 inherited ACL that denies the current user access. Both inventory and export
 skip this rebuildable cache; it contains no project source or research result.
 

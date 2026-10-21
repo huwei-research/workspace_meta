@@ -29,7 +29,7 @@ coordinates_used.json
 filled_fields_review.md
 
 # Installed copy of a personalized skill. Its source is synchronized through
-# the private Personal/Weihu-resume repository.
+# the private Personal/weihu_resume repository.
 .agents/skills/weihu-resume-writer/
 
 # Cursor cache (not config)
@@ -44,3 +44,6 @@ Thumbs.db
 __pycache__/
 *.pyc
 .venv/
+
+# Independently maintained local Harness source.
+/research_harness/

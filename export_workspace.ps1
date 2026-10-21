@@ -67,7 +67,7 @@ $workspaceArguments = @(
 )
 
 $excludedDirectories = @(
-    (Join-Path $sourceRoot "Research\MemOTRO\codes\.pytest_cache")
+    (Join-Path $sourceRoot "Research\memotro\codes\.pytest_cache")
 )
 if ($Mode -eq "Portable") {
     $excludedDirectories += @(

@@ -8,7 +8,7 @@
     remote branches. Entries with syncEnabled=false are reported and skipped
     unless -IncludePending is supplied.
 .EXAMPLE
-    git clone https://github.com/huwei-research/workspace-meta.git 2026Projects
+    git clone https://github.com/huwei-research/workspace_meta.git 2026Projects
     Set-Location 2026Projects
     ./setup.ps1 -SkipVenv
 #>
@@ -164,7 +164,7 @@ foreach ($repo in $repositories) {
 }
 
 if (-not $SkipPrivateSkills) {
-    $privateSkillSource = Join-Path $root "Personal/Weihu-resume/.agents/skills/weihu-resume-writer"
+    $privateSkillSource = Join-Path $root "Personal/weihu_resume/.agents/skills/weihu-resume-writer"
     $privateSkillTarget = Join-Path $root ".agents/skills/weihu-resume-writer"
     if (Test-Path -LiteralPath $privateSkillSource -PathType Container) {
         New-Item -ItemType Directory -Path $privateSkillTarget -Force | Out-Null

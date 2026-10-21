@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-21",
+  "format": "lower_snake_case",
+  "purpose": "Locate historical project paths; these are not filesystem aliases.",
+  "moves": [
+    {
+      "old": "Experimental/MetricizedMuonP0",
+      "new": "Experimental/metricized_muon_p0"
+    },
+    {
+      "old": "Experimental/QuasiNewton",
+      "new": "Experimental/quasi_newton"
+    },
+    {
+      "old": "Experimental/RailwayMaintenance",
+      "new": "Experimental/railway_maintenance"
+    },
+    {
+      "old": "Experimental/SelfCorrecting",
+      "new": "Experimental/self_correcting"
+    },
+    {
+      "old": "LiteratureLibrary/research-lit-harness",
+      "new": "LiteratureLibrary/research_lit_harness"
+    },
+    {
+      "old": "Personal/Weihu-resume",
+      "new": "Personal/weihu_resume"
+    },
+    {
+      "old": "Public/BUPTR",
+      "new": "Public/buptr"
+    },
+    {
+      "old": "Public/DisGRem",
+      "new": "Public/disgrem"
+    },
+    {
+      "old": "Public/MATRO",
+      "new": "Public/matro"
+    },
+    {
+      "old": "Public/MathResearchHarness",
+      "new": "Public/math_research_harness"
+    },
+    {
+      "old": "Publish/ArXiv",
+      "new": "Publish/arxiv"
+    },
+    {
+      "old": "Publish/BUPTR-paper",
+      "new": "Publish/buptr_paper"
+    },
+    {
+      "old": "Publish/DisGRem-paper",
+      "new": "Publish/disgrem_paper"
+    },
+    {
+      "old": "Publish/MATRO-paper",
+      "new": "Publish/matro_paper"
+    },
+    {
+      "old": "Research/BARN",
+      "new": "Research/barn"
+    },
+    {
+      "old": "Research/BUPTR",
+      "new": "Research/buptr"
+    },
+    {
+      "old": "Research/FROST",
+      "new": "Research/frost"
+    },
+    {
+      "old": "Research/FoRN",
+      "new": "Research/forn"
+    },
+    {
+      "old": "Research/MATRO",
+      "new": "Research/matro"
+    },
+    {
+      "old": "Research/MemOTRO",
+      "new": "Research/memotro"
+    },
+    {
+      "old": "Research/NMGeometry",
+      "new": "Research/nm_geometry"
+    },
+    {
+      "old": "Research/QuantumORBIT_DFO",
+      "new": "Research/quantum_orbit_dfo"
+    },
+    {
+      "old": "Research/QuantumPICO_BARN",
+      "new": "Research/quantum_pico_barn"
+    },
+    {
+      "old": "Research/RITRO",
+      "new": "Research/ritro"
+    },
+    {
+      "old": "Research/RSSM",
+      "new": "Research/rssm"
+    },
+    {
+      "old": "Research/SQZO",
+      "new": "Research/sqzo"
+    },
+    {
+      "old": "research-harness",
+      "new": "research_harness"
+    }
+  ]
+}

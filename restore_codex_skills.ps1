@@ -6,11 +6,16 @@
 [CmdletBinding()]
 param(
     [Parameter(Mandatory = $true)]
-    [string]$BackupPath
+    [string]$BackupPath,
+    [switch]$Legacy
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
+
+if (-not $Legacy) {
+    throw "Legacy whole-library restore is disabled by default. Use research_harness/tools/harness.py deploy for managed research skills; pass -Legacy only for an explicitly requested historical restore."
+}
 
 $source = [IO.Path]::GetFullPath($BackupPath)
 $destination = Join-Path ([Environment]::GetFolderPath("UserProfile")) ".codex\skills"

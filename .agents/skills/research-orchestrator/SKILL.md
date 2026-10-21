@@ -6,13 +6,13 @@ description: Master entry point for the complete research lifecycle in 2026Proje
 # Research Orchestrator
 
 Use the tested canonical contract at
-`LiteratureLibrary/research-lit-harness/.agents/skills/research-orchestrator/SKILL.md`.
+`LiteratureLibrary/research_lit_harness/.agents/skills/research-orchestrator/SKILL.md`.
 
 ## Startup
 
 1. Read workspace and project-local `AGENTS.md` files.
 2. Read the canonical skill above and only the task-route reference it names.
-3. Use `LiteratureLibrary/research-lit-harness` as the default governed corpus unless the project
+3. Use `LiteratureLibrary/research_lit_harness` as the default governed corpus unless the project
    declares another source.
 4. Run the corpus audit before a nontrivial mission.
 5. Build and audit one full-corpus mission, then load only the next routed specialist skill.

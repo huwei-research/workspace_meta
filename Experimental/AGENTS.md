@@ -1,27 +1,5 @@
-# Experimental Category Instructions
+# Experimental 类别说明
 
-## Scope and Inheritance
+允许充分探索、轻量原型和非Git项目。真实问题、代码与结果按需要组织；不强制空论文、空测试或远端。历史预算不自动限制新研究。
 
-Read `../AGENTS.md`, relevant `../CONVENTIONS.md` sections, and each project's
-`AGENTS.md` and README. This file is owned by `workspace-meta`.
-
-## Role and Structure
-
-- Use a small structure suited to the question: a note, prototype, configuration,
-  and recorded results may be enough. Add paper/package layers when needed.
-- A monorepo may contain self-contained research subprojects. Use a local
-  `AGENTS.md` for distinct subproject contracts without creating nested Git roots.
-- Keep exploratory code, reusable components, experiment records, and temporary
-  builds distinct. Preserve existing directory and version names for provenance.
-
-## Evidence and Promotion
-
-- Label observations, hypotheses, negative results, and proved statements
-  separately. P0 verdicts and smoke results are not paper-grade conclusions.
-- Use fresh output locations; retain actual commands, seeds, budgets,
-  environments, and failure records needed to interpret an experiment.
-- Promotion to Research or Publish requires a declared authority, reproducible
-  evidence, and updated references; moving a directory does not certify a result.
-- Preserve local-only/manual-transfer status until repository/remote creation
-  is authorized. Third-party checkouts keep their upstream names and licenses
-  and are outside workspace policy rewrites and ordinary synchronization.
+本类别是组织容器，不是子项目共同的Git仓库。遵循[工作区说明](../AGENTS.md)，再查看目标项目AGENTS；只读取当前任务需要的资料。
